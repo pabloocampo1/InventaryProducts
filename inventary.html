@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./inventary.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>products Inventary</title>
+</head>
+
+<body>
+    <div class="title">
+        <h2>Product Inventary</h2>
+        <button onclick="handleClickadd()" class="addProduct">add product</button>
+        <p class="title-p">total de productos : <span class="containerAllProducto-text"></span></p>
+    </div>
+    <div class="container-product">
+        <div class="table-product">
+            <table class="table">
+                <caption>List of Products
+                    <div class="noProducts">
+                        <span>NO THERE ARE PRODUCTS</span>
+                    </div>
+                </caption>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">name</th>
+                        <th scope="col">codeProduct</th>
+                        <th scope="col">brand</th>
+                        <th scope="col">description</th>
+                        <th scope="col">price(units)</th>
+                        <th scope="col">units</th>
+                        <th scope="col">categoria</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <!-- table products -->
+                </tbody> 
+            </table>
+        </div>
+        <div class="form-add-product inactive">
+            <div class="container-img-form">
+
+            </div>
+            <div class="form-add">
+                <div class="form-add-header">
+                    <h2>REGISTRATION FORM</h2>
+                    <button onclick="confirmExit()"><img src="https://cdn-icons-png.flaticon.com/512/1004/1004763.png" alt=""></button>
+                </div>
+                <form class="form" onsubmit="btnGet(event)" action="">
+                    <input type="text" id="name" placeholder="name product" name="name" required >
+                    <input type="text" id="codeProduct" placeholder="product code" name="codeProduct" required>
+                    <input type="text" id="brand" placeholder="brand" name="brand" required>
+                    <input type="text" id="imgurl" placeholder="img url" name="imgurl" required>
+                    <select id="opciones"  name="category">
+                        <option value="fruits">fruits</option>
+                        <option value="vegetables">vegetables</option>
+                        <option value="packaging">packaging</option>
+                        <option value="cleaning">cleaning</option>
+                        <option value="beverages">beverages</option>
+                        <option value="dairy">dairy</option>
+                        <option value="wheat">wheat</option>
+                        <option value="canned">canned</option>
+                    </select>
+                    <textarea id="description" name="description" rows="5" cols="50" placeholder="description" required></textarea>
+                    <input type="number" id="price" placeholder="price" name="price" required>
+                    <input type="number" id="units" placeholder="units" name="units" required> 
+
+                    <button type="submit" id="buttonForm">Create</button> 
+                </form>
+            </div>
+            <div class="confirmClose inactive">
+                <p>do you want exit?</p>
+                <div>
+                    <button class="yes-Close">yes</button> <button class="no-Close">not</button>
+                </div>
+            </div>
+        </div>
+        <!-- <audio controls>
+            <source src="./juan.mp3" type="audio/mpeg">
+            Tu navegador no soporta la reproducción de audio.
+          </audio> -->
+    </div>
+
+
+    <script src="./main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+

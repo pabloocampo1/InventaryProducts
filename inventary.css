@@ -1,0 +1,187 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* html{
+  font-size: 62.2%;
+}
+body{
+  font-size: 1.6rem;
+} */
+.title{
+  width: 100%;
+  height: 10vh;
+  padding: 0px 15px 0px 15px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.title h2{
+  font-weight: bold;
+  padding-right: 20px;
+}
+.title-p{
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.addProduct{
+  width: 120px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: rgb(94, 94, 244);
+  font-weight: bold;
+}
+.addProduct:hover{
+  background-color: black;
+  color: white;
+}
+.containerAllProducto-text{
+  color: blue;
+  font-weight: 400;
+}
+.container-product{
+  width: 100%;
+  height: auto;
+  padding: 0px 15px 20px 15px;
+}
+.table-product{
+  width: 100%;
+  height: 450px;
+}
+.table-product button{
+  all: unset;
+}
+.table-product button img{
+  width: 30px;
+}
+.form-add-product{
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+}
+.container-img-form{
+  width: 40%;
+  height: auto;
+  background-image: url(./gondola-local-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+}
+.form-add{
+  width: 60%;
+}
+.form-add-header{
+width: 100%;
+height: auto;
+display: flex;
+justify-content: space-around;
+}
+.form-add-header h2{
+  text-align: center;
+  font-weight: bold;
+  color: rgb(94, 94, 244);
+}
+.form-add-header button{
+  all: unset;
+}
+.form-add-header button img{
+  width: 40px;
+}
+.form{
+  width: 100%;
+  height: auto;
+  padding: 20px 10px;
+}
+
+.form input{
+  height: 40px;
+  width: 45%;
+  margin-bottom: 20px;
+  margin-right: 30px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: .5px .5px 10px rgb(203, 203, 203);
+  padding-left: 20px;
+}
+.form textarea{
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgb(209, 209, 209);
+  padding-left: 20px;
+}
+#opciones{
+  width:45%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgb(209, 209, 209);
+}
+#description{
+  width: 80%;
+}
+#buttonForm{
+  width: 100%;
+  padding: 20px;
+  border:none;
+  background-color: blueviolet;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.confirmClose{
+  display: grid;
+  place-content: center;
+  position: absolute;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.confirmClose p{
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+.confirmClose div{
+  display: flex;
+  width: 100%;
+}
+.confirmClose button{
+  width: 100px;
+  border: none;
+  border-radius: 15px;
+  margin: 5px;
+  color: white;
+  padding: 5px;
+  font-weight: bold;
+}
+.yes-Close{
+  background-color: blue;
+}
+.no-Close{
+  background-color: red;
+}
+.inactive{
+  display: none;
+}
+
+.noProducts{
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+}
