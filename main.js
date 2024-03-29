@@ -112,11 +112,11 @@ let Products = [
 ];
 
 function saveProductsToLocalStorage() {
-    localStorage.setItem("newProducdefini", JSON.stringify(Products));
+    localStorage.setItem("newProducdefini2", JSON.stringify(Products));
 }
 
 function loadProductsFromLocalStorage() {
-    const storedProducts = localStorage.getItem("newProducdefini");
+    const storedProducts = localStorage.getItem("newProducdefini2");
     if (storedProducts) {
         Products = JSON.parse(storedProducts);
     }
